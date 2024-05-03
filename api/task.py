@@ -1,8 +1,8 @@
 # api/task.py
 
 from flask import Blueprint, jsonify, request
-from backend.utils.token import token_required
-from backend.models.task_model import add_task, get_all_tasks, set_finish_state, db_delete_task
+from ..utils.token import token_required
+from ..models.task_model import add_task, get_all_tasks, set_finish_state, db_delete_task
 
 bp = Blueprint('task', __name__)
 
