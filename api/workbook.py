@@ -1,10 +1,10 @@
 # api/workbook.py
 
 from flask import Blueprint, jsonify, request
-from backend.utils.token import token_required
-from backend.models.workbook_model import add_workbook, get_all_workbooks, db_delete_workbook
-from backend.models.page_model import set_completed_state_by_ranges
-from backend.models.assignment_model import add_assignment_with_confirmation, merge_assignment_data, get_all_assignment, db_delete_assignment
+from ..utils.token import token_required
+from ..models.workbook_model import add_workbook, get_all_workbooks, db_delete_workbook
+from ..models.page_model import set_completed_state_by_ranges
+from ..models.assignment_model import add_assignment_with_confirmation, merge_assignment_data, get_all_assignment, db_delete_assignment
 
 bp = Blueprint('workbook', __name__)
 

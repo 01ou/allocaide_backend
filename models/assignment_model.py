@@ -6,25 +6,25 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm.exc import NoResultFound
 
 from ..extensions import db
-from backend.utils.util import (
+from ..utils.util import (
     remove_range_duplicates, 
     convert_to_isoformat, 
     get_completed_fraction, 
     get_now_tokyo_time,
     is_not_empty,
 )
-from backend.utils.model_util import (
+from ..utils.model_util import (
     validate_range_format,
     ranges_data_to_ranges_list,
     dict_to_range_list
 )
-from backend.models.workbook_model import (
+from ..models.workbook_model import (
     validate_id, 
     get_workbook_matching_user_id, 
     get_workbook_for_user,
     get_assignments,
 )
-from backend.models.page_model import (
+from ..models.page_model import (
     get_completed_page_percentage,
     get_incomplete_page_ranges
 )

@@ -1,6 +1,6 @@
-from backend.utils.util import range_to_list, ranges_to_number_list, remove_range_duplicates
-from backend.utils.util import numbers_to_ranges
-from backend.models.workbook_model import validate_id, register_pages
+from ..utils.util import range_to_list, ranges_to_number_list, remove_range_duplicates
+from ..utils.util import numbers_to_ranges
+from ..models.workbook_model import validate_id, register_pages
 from ..extensions import db
 from sqlalchemy.exc import SQLAlchemyError
 
