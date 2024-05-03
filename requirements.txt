@@ -6,3 +6,4 @@ SQLAlchemy==2.0.29
 Flask-Login==0.6.3
 Flask-Migrate==4.0.7
 PyJWT==2.8.0
+pytz==2024.1
